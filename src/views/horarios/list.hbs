@@ -1,0 +1,36 @@
+<div class="container p-4">
+    <div class="col-md-2 ">
+        <div class="card card-body text-center" style="margin-bottom: 10px">
+            <a href="/empresas/comercios/horarios/listado/{{id}}">Ver Estilo Listado!</a>
+        </div>
+    </div>
+    <div class="col-md-2 mx-auto">
+        <div class="card card-body text-center">
+            <a href="/empresas/comercios/horarios/add/{{id}}">Crear Horario!</a>
+        </div>
+    </div>
+    <div class="row">        
+        {{#each horarios}}
+        <div class="col-md-3">
+            <div class="card text-center">
+                <div class="card-body">
+                    <h3 class="card-title text-uppercase">
+                        {{dia}}
+                    </h3>
+                    <p class="m-2">{{hora_apertura}}</p>
+                    <p class="m-2">{{hora_cierre}}</p>
+                    <p class="text-muted">
+                        {{timeago created_at}}
+                    </p>
+                    <a class="btn btn-danger" href="/empresas/comercios/horarios/delete/{{id}}/{{comercio_id}}">
+                        Eliminar
+                    </a>
+                    <a class="btn btn-secondary" href="/empresas/comercios/horarios/edit/{{id}}/{{comercio_id}}">
+                        Modificar
+                    </a>
+                </div>
+            </div>
+        </div>
+        {{/each}}
+    </div>
+</div>

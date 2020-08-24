@@ -1,0 +1,44 @@
+<div class="container p-4">
+    <div class="col-md-2 ">
+        <div class="card card-body text-center" style="margin-bottom: 10px">
+            <a href="/empresas/comercios/listado/{{id}}">Ver Estilo Listado!</a>
+        </div>
+    </div>
+    <div class="col-md-2 mx-auto">
+        <div class="card card-body text-center">
+            <a href="/empresas/comercios/add/{{id}}">Crear Comercio!</a>
+        </div>
+    </div>
+    <div class="row">        
+        {{#each comercios}}
+        <div class="col-md-3">
+            <div class="card text-center">
+                <div class="card-body">
+                    <h3 class="card-title text-uppercase">
+                        {{nombre_comercio}}
+                    </h3>
+                    <p class="m-2">{{movil}}</p>
+                    <p class="text-muted">
+                        {{timeago created_at}}
+                    </p>
+                    <a class="btn btn-primary" href="/empresas/comercios/tags/{{id}}">
+                        Tags
+                    </a>
+                    <a class="btn btn-primary" href="/empresas/comercios/horarios/{{id}}">
+                        Horarios
+                    </a>
+                    <a class="btn btn-primary" href="/empresas/comercios/zonasentrega/{{id}}">
+                        Zonas de Entrega
+                    </a>
+                    <a class="btn btn-danger" href="/empresas/comercios/delete/{{id}}/{{empresa_id}}">
+                        Delete Link
+                    </a>
+                    <a class="btn btn-secondary" href="/empresas/comercios/edit/{{id}}/{{empresa_id}}">
+                        Edit
+                    </a>
+                </div>
+            </div>
+        </div>
+        {{/each}}
+    </div>
+</div>

@@ -1,0 +1,70 @@
+<div class="col-md-4 mx-auto">
+
+    <div class="card">
+        <div class="card-body">
+            <form action="/empresas/comercios/edit/{{comercio.id}}/{{comercio.empresa_id}}" method="POST">
+                <div class="form-group">
+                    <input type="text" name="nombre_comercio" class="form-control" placeholder="Nombre Comercio"
+                        value="{{comercio.nombre_comercio}}" autofocus>
+                </div>
+                <div class="form-group">
+                    <input type="text" name="codigo_postal" class="form-control" placeholder="Codigo Postal"
+                        value="{{comercio.codigo_postal}}">
+                </div>
+                <div class="form-group">
+                    <input type="text" name="movil" class="form-control" placeholder="Movil" value="{{comercio.movil}}">
+                </div>
+                <div class="form-group">
+                    <input type="text" name="correo" class="form-control" placeholder="Correo"
+                        value="{{comercio.correo}}">
+                </div>
+                <div class="form-group">
+                    <input type="text" name="direccion" class="form-control" placeholder="Direccion"
+                        value="{{comercio.direccion}}">
+                </div>
+                <div class="form-group">
+                    <input type="text" name="provincia" class="form-control" placeholder="Provincia" value="{{comercio.provincia}}">
+                </div>
+                <div class="form-group">
+                    <input type="text" name="ciudad" class="form-control" placeholder="Ciudad" value="{{comercio.ciudad}}">
+                </div>
+                <div class="form-group">
+                    <input type="text" name="descripcion" class="form-control" placeholder="Descripcion" value="{{comercio.descripcion}}">
+                </div>
+                <div class="form-group">
+                    <input type="text" name="responsable" class="form-control" placeholder="Responsable" value="{{comercio.responsable}}">
+                </div>
+                <div class="form-group">
+                    <input type="text" name="activodescuento" class="form-control" placeholder="Activo Descuento" value="{{comercio.activodescuento}}">
+                </div>
+                <div class="form-group">
+                    <input type="text" name="precioparadescontar" class="form-control"
+                        placeholder="Precio para descontar" value="{{comercio.precioparadescontar}}">
+                </div>
+                <div class="form-group">
+                    <input type="text" name="montodescuento" class="form-control" placeholder="Monto Descuento" value="{{comercio.montodescuento}}">
+                </div>
+                <div class="form-group">
+                    <input type="text" name="pedidoinferior" class="form-control" placeholder="Pedido Inferior" value="{{comercio.pedidoinferior}}">
+                </div>
+                <div class="form-group">
+                    <input type="text" name="precioinferior" class="form-control" placeholder="Precio Inferior" value="{{comercio.precioinferior}}">
+                </div>
+                <div class="form-group">
+                    <input type="text" name="pedidosuperior" class="form-control" placeholder="Pedido Superior" value="{{comercio.pedidosuperior}}">
+                </div>
+                <div class="form-group">
+                    <input type="text" name="preciosuperior" class="form-control" placeholder="Precio Superior" value="{{comercio.preciosuperior}}">
+                </div>
+                <div class="form-group">
+                    <input type="text" name="entregadescripcion" class="form-control" placeholder="Entrega Descripcion" value="{{comercio.entregadescripcion}}">
+                </div>
+                <div class="form-group">
+                    <button class="btn btn-success btn-block">
+                        Save
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

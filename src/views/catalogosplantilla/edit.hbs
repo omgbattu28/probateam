@@ -1,0 +1,31 @@
+<div class="col-md-4 mx-auto">
+
+    <div class="card">
+        <div class="card-body">
+            <form action="/empresas/catalogosplantilla/edit/{{catalogoplantilla.id}}/{{catalogoplantilla.empresa_id}}" method="POST">
+                <div class="form-group">
+                    <input type="text" name="nombre_producto" class="form-control" placeholder="Nombre Producto" value="{{catalogoplantilla.nombre_producto}}"
+                        autofocus>
+                </div>
+                <div class="form-group">
+                    <input type="text" name="descripcion_producto" class="form-control"
+                        placeholder="Descripcion Producto" value="{{catalogoplantilla.descripcion_producto}}">
+                </div>
+                <div class="form-group">
+                    <input type="text" name="precio" class="form-control" placeholder="Precio" value="{{catalogoplantilla.precio}}">
+                </div>
+                <div class="form-group">
+                    <input type="text" name="categoria" class="form-control" placeholder="Categoria" value="{{catalogoplantilla.categoria}}">
+                </div>
+                <div class="form-group">
+                    <input type="text" name="tipo" class="form-control" placeholder="Tipo" value="{{catalogoplantilla.tipo}}">
+                </div>
+                <div class="form-group">
+                    <button class="btn btn-success btn-block">
+                        Save
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

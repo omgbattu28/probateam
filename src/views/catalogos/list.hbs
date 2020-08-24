@@ -1,0 +1,35 @@
+<div class="container p-4">
+    <div class="col-md-2 ">
+        <div class="card card-body text-center" style="margin-bottom: 10px">
+            <a href="/empresas/catalogos/listado/{{id}}">Ver Estilo Listado!</a>
+        </div>
+    </div>
+    <div class="col-md-2 mx-auto">
+        <div class="card card-body text-center">
+            <a href="/empresas/catalogos/add/{{id}}">Crear Catalogo!</a>
+        </div>
+    </div>
+    <div class="row">        
+        {{#each catalogos}}
+        <div class="col-md-3">
+            <div class="card text-center">
+                <div class="card-body">
+                    <h3 class="card-title text-uppercase">
+                        {{nombre_producto}}
+                    </h3>
+                    <p class="m-2">{{movil}}</p>
+                    <p class="text-muted">
+                        {{timeago created_at}}
+                    </p>
+                    <a class="btn btn-danger" href="/empresas/catalogos/delete/{{id}}/{{empresa_id}}">
+                        Delete Link
+                    </a>
+                    <a class="btn btn-secondary" href="/empresas/catalogos/edit/{{id}}/{{empresa_id}}">
+                        Edit
+                    </a>
+                </div>
+            </div>
+        </div>
+        {{/each}}
+    </div>
+</div>

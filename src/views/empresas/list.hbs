@@ -1,0 +1,43 @@
+<div class="container p-4">
+    <div class="col-md-2 ">
+        <div class="card card-body text-center" style="margin-bottom: 10px">
+            <a href="/empresas/listado">Ver Estilo Listado!</a>
+        </div>
+    </div>
+    <div class="row">
+        {{#each empresas}}
+        <div class="col-md-3">
+            <div class="card text-center">
+                <div class="card-body">
+                    <h3 class="card-title text-uppercase">
+                        {{nombre_empresa}}
+                    </h3>
+                    <p class="m-2">{{encargado}}</p>
+                    <p class="text-muted">
+                        {{timeago created_at}}
+                    </p>
+                    <a class="btn btn-primary" href="/empresas/comercios/{{id}}">
+                        Comercios
+                    </a>
+                    <a class="btn btn-primary" href="/empresas/catalogosplantilla/{{id}}">
+                        Catalogos
+                    </a>
+                    <a class="btn btn-danger" href="/empresas/delete/{{id}}">
+                        Delete Link
+                    </a>
+                    <a class="btn btn-secondary" href="/empresas/edit/{{id}}">
+                        Edit
+                    </a>
+                </div>
+            </div>
+        </div>
+        {{else}}
+        <div class="col-md-4 mx-auto">
+            <div class="card card-body text-center">
+                <p>There are not Links saved yet.</p>
+                <a href="/empresas/add">Create One!</a>
+            </div>
+        </div>
+        {{/each}}
+    </div>
+</div>

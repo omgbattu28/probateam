@@ -1,0 +1,70 @@
+<div class="container p-4">
+    <div class="row">
+        <div class="col-md-4 mx-auto">
+
+            <div class="card">
+                <div class="card-body">
+                    <form action="/empresas/comercios/add/{{id}}" method="POST">
+                        <div class="form-group">
+                            <input type="text" name="nombre_comercio" class="form-control" placeholder="Nombre Comercio" autofocus>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" name="codigo_postal" class="form-control" placeholder="Codigo Postal">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" name="movil" class="form-control" placeholder="Movil">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" name="correo" class="form-control" placeholder="Correo">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" name="direccion" class="form-control" placeholder="Direccion">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" name="provincia" class="form-control" placeholder="Provincia">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" name="ciudad" class="form-control" placeholder="Ciudad">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" name="descripcion" class="form-control" placeholder="Descripcion">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" name="responsable" class="form-control" placeholder="Responsable">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" name="activodescuento" class="form-control" placeholder="Activo Descuento">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" name="precioparadescontar" class="form-control" placeholder="Precio para descontar">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" name="montodescuento" class="form-control" placeholder="Monto Descuento">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" name="pedidoinferior" class="form-control" placeholder="Pedido Inferior">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" name="precioinferior" class="form-control" placeholder="Precio Inferior">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" name="pedidosuperior" class="form-control" placeholder="Pedido Superior">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" name="preciosuperior" class="form-control" placeholder="Precio Superior">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" name="entregadescripcion" class="form-control" placeholder="Entrega Descripcion">
+                        </div>
+                        <div class="form-group">
+                            <button class="btn btn-success btn-block">
+                                Save
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>

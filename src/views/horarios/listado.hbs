@@ -1,0 +1,40 @@
+<div class="container p-4">
+    <div class="col-md-2 ">
+        <div class="card card-body text-center">
+            <a href="/empresas/comercios/horarios/{{id}}">Ver Estilo Listado!</a>
+        </div>
+    </div>
+    <div class="col-md-2 mx-auto">
+        <div class="card card-body text-center">
+            <a href="/empresas/comercios/horarios/add/{{id}}">Crear Horario!</a>
+        </div>
+    </div>
+    <div class="row  mt-5">
+        <div class="col-md-7">
+            <table class="table table-bordered table-hover">
+                <thead>
+                    <tr>
+                        <th>Nº</th>
+                        <th>Dia</th>
+                        <th>Hora de Apertura</th>
+                        <th>Hora de Cierre</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {{#each horarios}}
+                    <tr>
+                        <td>{{id}}</td>
+                        <td>{{dia}}</td>
+                        <td>{{hora_apertura}}</td>
+                        <td>{{hora_cierre}}</td>
+                    </tr>
+                    {{else}}
+                    <tr>
+                        <td colspan="4">No hay dato</td>
+                    </tr>
+                    {{/each}}
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

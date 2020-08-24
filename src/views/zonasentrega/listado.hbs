@@ -1,0 +1,42 @@
+<div class="container p-4">
+    <div class="col-md-2 ">
+        <div class="card card-body text-center">
+            <a href="/empresas/comercios/zonasentrega/{{id}}">Ver Estilo Listado!</a>
+        </div>
+    </div>
+    <div class="col-md-2 mx-auto">
+        <div class="card card-body text-center">
+            <a href="/empresas/comercios/zonasentrega/add/{{id}}">Crear Zona de Entrega!</a>
+        </div>
+    </div>
+    <div class="row  mt-5">
+        <div class="col-md-7">
+            <table class="table table-bordered table-hover">
+                <thead>
+                    <tr>
+                        <th>Nº</th>
+                        <th>Codigo Postal</th>
+                        <th>Precio Minimo</th>
+                        <th>Coste de Envio</th>
+                        <th>Tiempo de Entrega</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {{#each zonasentrega}}
+                    <tr>
+                        <td>{{id}}</td>
+                        <td>{{codigo_postal}}</td>
+                        <td>{{precio_minimo}}</td>
+                        <td>{{coste_envio}}</td>
+                        <td>{{tiempo_entrega}}</td>
+                    </tr>
+                    {{else}}
+                    <tr>
+                        <td colspan="5">No hay dato</td>
+                    </tr>
+                    {{/each}}
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

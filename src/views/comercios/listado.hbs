@@ -1,0 +1,68 @@
+<div class="container p-4">
+    <div class="col-md-2 ">
+        <div class="card card-body text-center">
+            <a href="/empresas/comercios/{{id}}">Ver Estilo Listado!</a>
+        </div>
+    </div>
+    <div class="col-md-2 mx-auto">
+        <div class="card card-body text-center">
+            <a href="/empresas/comercios/add/{{id}}">Crear Comercio!</a>
+        </div>
+    </div>
+    <div class="row  mt-5">
+        <div class="col-md-7">
+            <table class="table table-bordered table-hover">
+                <thead>
+                    <tr>
+                        <th>Nº</th>
+                        <th>Nombre Comercio</th>
+                        <th>Codigo Postal</th>
+                        <th>Movil</th>
+                        <th>Correo</th>
+                        <th>Direccion</th>
+                        <th>Provincia</th>
+                        <th>Ciudad</th>
+                        <th>Descripcion</th>
+                        <th>Responsable</th>
+                        <th>Activo Descuento</th>
+                        <th>Precio para descontar</th>
+                        <th>Monto Descuento</th>
+                        <th>Pedido Inferior</th>
+                        <th>Precio Inferior</th>
+                        <th>Pedido Superior</th>
+                        <th>Precio Superior</th>
+                        <th>Entrega Descripcion</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {{#each comercios}}
+                    <tr>
+                        <td>{{id}}</td>
+                        <td>{{nombre_comercio}}</td>
+                        <td>{{codigo_postal}}</td>
+                        <td>{{movil}}</td>
+                        <td>{{correo}}</td>
+                        <td>{{direccion}}</td>
+                        <td>{{provincia}}</td>
+                        <td>{{ciudad}}</td>
+                        <td>{{descripcion}}</td>
+                        <td>{{responsable}}</td>
+                        <td>{{activodescuento}}</td>
+                        <td>{{precioparadescontar}}</td>
+                        <td>{{montodescuento}}</td>
+                        <td>{{pedidoinferior}}</td>
+                        <td>{{precioinferior}}</td>
+                        <td>{{pedidosuperior}}</td>
+                        <td>{{preciosuperior}}</td>
+                        <td>{{entregadescripcion}}</td>
+                    </tr>
+                    {{else}}
+                    <tr>
+                        <td colspan="18">No hay dato</td>
+                    </tr>
+                    {{/each}}
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

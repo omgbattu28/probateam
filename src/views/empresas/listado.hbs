@@ -1,0 +1,37 @@
+<div class="container">
+    <div class="col-md-2 ">
+        <div class="card card-body text-center">
+            <a href="/empresas">Ver Estilo Listado!</a>
+        </div>
+    </div>
+    <div class="row mt-5">
+        <div class="col-md-7">
+            <table class="table table-bordered table-hover">
+                <thead>
+                    <tr>
+                        <th>Nº</th>
+                        <th>Nombre Empresa</th>
+                        <th>CIF</th>
+                        <th>Dirección</th>
+                        <th>Encargado</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {{#each empresas}}
+                    <tr>
+                        <td>{{id}}</td>
+                        <td>{{nombre_empresa}}</td>
+                        <td>{{cif}}</td>
+                        <td>{{direccion}}</td>
+                        <td>{{encargado}}</td>
+                    </tr>
+                    {{else}}
+                    <tr>
+                        <td colspan="5">No hay dato</td>
+                    </tr>
+                    {{/each}}
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

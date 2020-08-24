@@ -1,0 +1,26 @@
+<div class="col-md-4 mx-auto">
+
+    <div class="card">
+        <div class="card-body">
+            <form action="/empresas/comercios/zonasentrega/edit/{{zonaentrega.id}}/{{zonaentrega.comercio_id}}" method="POST">
+                <div class="form-group">
+                    <input type="text" name="codigo_postal" class="form-control" placeholder="Codigo Postal" value="{{zonaentrega.codigo_postal}}" autofocus>
+                </div>
+                <div class="form-group">
+                    <input type="text" name="precio_minimo" class="form-control" placeholder="Precio minimo" value="{{zonaentrega.precio_minimo}}">
+                </div>
+                <div class="form-group">
+                    <input type="text" name="coste_envio" class="form-control" placeholder="Coste de envio" value="{{zonaentrega.coste_envio}}">
+                </div>
+                <div class="form-group">
+                    <input type="text" name="tiempo_entrega" class="form-control" placeholder="Tiempo de entrega" value="{{zonaentrega.tiempo_entrega}}">
+                </div>
+                <div class="form-group">
+                    <button class="btn btn-success btn-block">
+                        Grabar
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

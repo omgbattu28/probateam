@@ -1,0 +1,36 @@
+<div class="container p-4">
+    <div class="col-md-2 ">
+        <div class="card card-body text-center">
+            <a href="/empresas/comercios/tags/{{id}}">Ver Estilo Listado!</a>
+        </div>
+    </div>
+    <div class="col-md-2 mx-auto">
+        <div class="card card-body text-center">
+            <a href="/empresas/comercios/tags/add/{{id}}">Crear Tag!</a>
+        </div>
+    </div>
+    <div class="row  mt-5">
+        <div class="col-md-7">
+            <table class="table table-bordered table-hover">
+                <thead>
+                    <tr>
+                        <th>Nº</th>
+                        <th>Descripcion</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {{#each tags}}
+                    <tr>
+                        <td>{{id}}</td>
+                        <td>{{descripcion}}</td>
+                    </tr>
+                    {{else}}
+                    <tr>
+                        <td colspan="2">No hay dato</td>
+                    </tr>
+                    {{/each}}
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

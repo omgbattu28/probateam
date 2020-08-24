@@ -1,0 +1,44 @@
+<div class="container p-4">
+    <div class="col-md-2 ">
+        <div class="card card-body text-center">
+            <a href="/empresas/catalogos/{{id}}">Ver Estilo Listado!</a>
+        </div>
+    </div>
+    <div class="col-md-2 mx-auto">
+        <div class="card card-body text-center">
+            <a href="/empresas/catalogos/add/{{id}}">Crear Catalogo!</a>
+        </div>
+    </div>
+    <div class="row  mt-5">
+        <div class="col-md-7">
+            <table class="table table-bordered table-hover">
+                <thead>
+                    <tr>
+                        <th>Nº</th>
+                        <th>Nombre Producto</th>
+                        <th>Descripcion Producto</th>
+                        <th>Precio</th>
+                        <th>Categoria</th>
+                        <th>Tipo</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {{#each catalogos}}
+                    <tr>
+                        <td>{{id}}</td>
+                        <td>{{nombre_producto}}</td>
+                        <td>{{descripcion_producto}}</td>
+                        <td>{{precio}}</td>
+                        <td>{{categoria}}</td>
+                        <td>{{tipo}}</td>
+                    </tr>
+                    {{else}}
+                    <tr>
+                        <td colspan="6">No hay dato</td>
+                    </tr>
+                    {{/each}}
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
